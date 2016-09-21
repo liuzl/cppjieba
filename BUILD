@@ -47,3 +47,10 @@ cc_library(
     visibility = ["//visibility:public"],
 )
 
+filegroup(
+    name = "dict",
+    srcs = glob([
+        "dict/*.*",
+        "dict/**/*.*",
+    ]),
+)
