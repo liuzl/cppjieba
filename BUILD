@@ -2,6 +2,8 @@
 
 licenses(["notice"])
 
+package(default_visibility = ["//visibility:public"])
+
 cc_library(
     name = "cppjieba",
     srcs = [
@@ -44,7 +46,6 @@ cc_library(
         "cppjieba/Unicode.hpp",
     ],
     includes = [],
-    visibility = ["//visibility:public"],
 )
 
 filegroup(
